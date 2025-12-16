@@ -27,9 +27,9 @@ def get_ip_info():
         return jsonify(filtered_data)
     
     except requests.exceptions.RequestException as e:
-        return jsonify({"Error =>": f"{str(e)}"}), 500
+        return jsonify({"Error =>": f"GeT Info Ip!"}), 500
     except Exception as e:
-        return jsonify({"Error =>": f"{str(e)}"}), 500
+        return jsonify({"Error =>": f"GeT Info Ip!"}), 500
 
 # إزالة app.run() للاستخدام على Vercel
 # if __name__ == '__main__':
